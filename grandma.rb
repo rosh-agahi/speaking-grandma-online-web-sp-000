@@ -3,7 +3,7 @@
 statement = "Hi, Grandma!"
 
 def speak_to_grandma(statement)
-  if UPCASE
+  if statement.match(/[A-Z]+\W$/)
     puts "NO, NOT SINCE 1938!"
   elsif statement = "I LOVE YOU GRANDMA!"
     puts "I LOVE YOU YOO PUMPKIN"
